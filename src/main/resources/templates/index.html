@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title th:text="${title}">BSAD Open Framework</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1 th:text="${title}">BSAD Open Framework 2.0</h1>
+
+<form method="post" action="/products" style="margin-bottom: 1rem">
+  <input name="name" placeholder="Product name" required />
+  <input name="brand" placeholder="Brand" required />
+  <button type="submit">Add</button>
+</form>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+  <tr><th>ID</th><th>Name</th><th>Brand</th></tr>
+  </thead>
+  <tbody>
+  <tr th:each="p : ${products}">
+    <td th:text="${p.id}">1</td>
+    <td th:text="${p.name}">Sample</td>
+    <td th:text="${p.brand}">ACME</td>
+  </tr>
+  </tbody>
+</table>
+
+<p>REST: <code>GET /api/products</code></p>
+<p>SOAP WSDL: <code>/services/hello?wsdl</code></p>
+</body>
+</html>
