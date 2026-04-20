@@ -16,14 +16,11 @@ spring:
         jdbc:
           time_zone: UTC
     show-sql: true
+  cache:
+    type: jcache
 
 server:
   port: 8080
-
-# Enable caching with Ehcache
-spring:
-  cache:
-    type: jcache
 
 # Apache CXF base path for SOAP services
 cxf:

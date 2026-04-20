@@ -12,7 +12,7 @@ import jakarta.xml.ws.Endpoint;
 public class CxfConfig {
 
     @Bean
-    public Endpoint helloEndpoint(Bus bus, HelloServiceImpl impl) {
+    public EndpointImpl helloEndpoint(Bus bus, HelloServiceImpl impl) {
         EndpointImpl endpoint = new EndpointImpl(bus, impl);
         endpoint.publish("/hello"); // SOAP endpoint at /services/hello via CXF default path
         return endpoint;
