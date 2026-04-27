@@ -3,8 +3,9 @@ package com.example.bsad.soap;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
 
-@WebService(serviceName = "HelloService")
+@WebService
 public interface HelloService {
+
     @WebMethod
-    String hello(String name);
+    String sayHello(String name);
 }

@@ -12,13 +12,14 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-            .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/", "/css/**", "/js/**", "/images/**", "/actuator/**").permitAll()
-                .requestMatchers("/api/**", "/services/**").permitAll()
-                .anyRequest().authenticated()
-            )
-            .httpBasic(Customizer.withDefaults())
-            .csrf(csrf -> csrf.disable()); // for demo, disable CSRF (enable in production)
+                .authorizeHttpRequests(auth -> auth
+                                .requestMatchers("/", "/css/**", "/js/**", "/images/**", "/actuator/**").permitAll()
+                                .requestMatchers("/api/**", "/services/**").permitAll()
+                                .anyRequest().permitAll()
+                        //.anyRequest().authenticated()
+                )
+                .httpBasic(Customizer.withDefaults())
+                .csrf(csrf -> csrf.disable()); // for demo, disable CSRF (enable in production)
         return http.build();
     }
 }
