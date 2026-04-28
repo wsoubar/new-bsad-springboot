@@ -1,5 +1,5 @@
 
-# BSAD Open Framework 2.0 (Spring Boot 3.5.6, Java 21)
+# CTBE Open Framework 2.0 (Spring Boot 3.5.6, Java 21)
 
 Projeto base modernizado para substituir Struts2 + JSP por Spring MVC + Thymeleaf
 e consolidar CXF (SOAP), JasperReports, Ehcache 3 e JPA com MySQL.
@@ -10,7 +10,7 @@ e consolidar CXF (SOAP), JasperReports, Ehcache 3 e JPA com MySQL.
 2. Compile e rode:
    ```bash
    mvn clean package
-   java -jar target/bsad-open-framework-2.0.0.jar
+   java -jar target/ctbe-open-framework-2.0.0.jar
    ```
    Ou durante o dev:
    ```bash
