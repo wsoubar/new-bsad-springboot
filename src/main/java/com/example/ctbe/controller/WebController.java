@@ -1,7 +1,7 @@
-package com.example.bsad.controller;
+package com.example.ctbe.controller;
 
-import com.example.bsad.model.Product;
-import com.example.bsad.service.ProductService;
+import com.example.ctbe.model.Product;
+import com.example.ctbe.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,7 +15,7 @@ public class WebController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("title", "BSAD Open Framework 2.0 (Spring Boot 3)");
+        model.addAttribute("title", "CTBE Open Framework 2.0 (Spring Boot 3)");
         model.addAttribute("products", service.list());
         return "index";
     }

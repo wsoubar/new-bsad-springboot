@@ -1,7 +1,7 @@
-package com.example.bsad.service;
+package com.example.ctbe.service;
 
-import com.example.bsad.model.Product;
-import com.example.bsad.repository.ProductRepository;
+import com.example.ctbe.model.Product;
+import com.example.ctbe.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;

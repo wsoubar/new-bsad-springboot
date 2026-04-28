@@ -1,4 +1,4 @@
-package com.example.bsad.controller;
+package com.example.ctbe.controller;
 
 import jakarta.servlet.http.HttpServletResponse;
 import net.sf.jasperreports.engine.*;

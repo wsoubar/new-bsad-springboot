@@ -1,7 +1,7 @@
-package com.example.bsad.controller;
+package com.example.ctbe.controller;
 
-import com.example.bsad.model.Product;
-import com.example.bsad.service.ProductService;
+import com.example.ctbe.model.Product;
+import com.example.ctbe.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

@@ -2,11 +2,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title th:text="${title}">BSAD Open Framework</title>
+  <title th:text="${title}"></title>
   <link rel="stylesheet" th:href="@{/css/styles.css}">
 </head>
 <body>
-<h1 th:text="${title}">BSAD Open Framework 2.0</h1>
+<h1 th:text="${title}"></h1>
 
 <form method="post" action="/products" style="margin-bottom: 1rem">
   <input name="name" placeholder="Product name" required />

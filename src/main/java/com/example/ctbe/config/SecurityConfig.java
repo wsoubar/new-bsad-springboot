@@ -1,4 +1,4 @@
-package com.example.bsad.config;
+package com.example.ctbe.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

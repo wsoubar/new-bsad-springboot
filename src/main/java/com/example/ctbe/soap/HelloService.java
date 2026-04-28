@@ -1,4 +1,4 @@
-package com.example.bsad.soap;
+package com.example.ctbe.soap;
 
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;

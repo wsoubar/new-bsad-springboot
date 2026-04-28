@@ -1,4 +1,4 @@
-package com.example.bsad.soap;
+package com.example.ctbe.soap;
 
 import jakarta.jws.WebService;
 import org.springframework.stereotype.Service;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @WebService(
         serviceName = "HelloService",
         portName = "HelloPort",
-        endpointInterface = "com.example.bsad.soap.HelloService"
+        endpointInterface = "com.example.ctbe.soap.HelloService"
 )
 public class HelloServiceImpl implements HelloService {
 

@@ -1,4 +1,4 @@
-package com.example.bsad.model;
+package com.example.ctbe.model;
 
 import jakarta.persistence.*;
 import lombok.*;
